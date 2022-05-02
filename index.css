@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.sidebar {
+    /* background-color: rgb(121, 163, 255); */
+    background: linear-gradient(rgb(187, 209, 255), rgb(132, 171, 255), rgb(94, 146, 249));
+    width: 15vw;
+    height: 100vh;
+}
+
+.sidebar nav {
+    padding: 25px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 1.7rem;
+    padding: 33px 0px;
+}
+
+.sidebar nav li a{
+    width: 6.8rem;
+}
+
+
+.container {
+    display: flex;
+}
+.container::before{
+    content: "";
+    background: url(./Images/indexBackground.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.12;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+
+.main {
+    /* background-color: yellow; */
+    width: 85vw;
+    height: 100vh;
+}
+
+.infoContainer {
+    /* background-color: rgb(168, 217, 230); */
+    border: 2px solid rgb(43, 4, 186);
+    border-radius: 1.3rem;
+    height: 75vh;
+    width: 80vw;
+    margin: 4.0rem auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    font-family: 'Source Code Pro', monospace;
+}
+.buttons a{
+    width: 9rem;
+    margin: 1.1rem 0rem;
+}
+.hello {
+    padding-top: 0.2rem;
+    font-size: 3.3rem;
+}
+
+.name {
+    padding-top: 0.1rem;
+    font-size: 2.7rem;
+    font-weight: bold;
+}
+
+.about {
+    padding-top: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.moreabout{
+    padding-top: 0.7rem;
+    font-size: 1.2rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    border: 3px ridge black;
+    box-shadow: 2px 2px black;
+    cursor: pointer;
+    background-image: linear-gradient(rgb(218, 229, 252), rgb(217, 229, 254), rgb(143, 177, 246));
+}
+.btn:hover{
+    color: white;
+    background-image: linear-gradient(rgb(14, 84, 237), rgb(6, 53, 155), rgb(27, 92, 220));
+}
+.btn:active{
+    transform: translateY(3px);
+}
+
+.devPic img {
+    height: 75vh;
+}

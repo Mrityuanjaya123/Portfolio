@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    border: 3px ridge black;
+    box-shadow: 2px 2px black;
+    cursor: pointer;
+    background-image: linear-gradient(rgb(218, 229, 252), rgb(217, 229, 254), rgb(143, 177, 246));
+}
+.btn:hover{
+    color: white;
+    background-image: linear-gradient(rgb(14, 84, 237), rgb(6, 53, 155), rgb(27, 92, 220));
+}
+.btn:active{
+    transform: translateY(3px);
+}
+
+
+.sidebar {
+    background: linear-gradient(rgb(187, 209, 255), rgb(132, 171, 255), rgb(94, 146, 249));
+    width: 15vw;
+    height: 100vh;
+}
+
+.sidebar nav {
+    padding: 25px;
+}
+
+.sidebar nav li {
+    
+    list-style: none;
+    font-size: 1.7rem;
+    padding: 33px 0px;
+}
+.sidebar nav li a{
+    
+    text-decoration: none;
+    color: black;
+    width: 11.2rem;
+}
+
+
+.container {
+    display: flex;
+}
+.container::before{
+    content: "";
+    background: url(./Images/projectBackground.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.12;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+
+.main {
+    /* background-color: yellow; */
+    width: 85vw;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.main h1{
+    font-size: 3rem;
+    margin: 2rem 0rem 1rem 0rem;
+    text-align: center;
+}
+
+.boxes{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    height: 80vh;
+}
+.card{
+    box-shadow: inset 5px 5px 5px rgba(4,67,227,0.05),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+                5px 5px 5px rgba(4, 67, 227, 0.05),
+                -5px -5px 5px rgba(255, 255, 255, 0.5);
+    margin: 0.5rem 1rem 0rem 2rem;
+    padding: 0.8rem 0.7rem;
+    height: 32vh;
+    width: 20vw;
+    /* border: 2px solid rgb(4, 67, 227); */
+    border-radius: 15px;
+}
+.card .box{
+    margin: 0.5rem 1rem;
+    position: relative;
+    top: 1px;
+    box-shadow: 0px 10px 20px rgba(0, 22, 70, 0.15);
+    height: 12.5rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: 0.4s;
+}
+.card .box h3{
+    position: absolute;
+    top: 2px;
+}
+.card .box p{
+    /* padding-top: 7px; */
+    position: absolute;
+    top: 48px;
+
+}
+.card .box button{
+    position: absolute;
+    bottom: 2px;
+    text-align: center;
+    margin: 0.3rem 0rem 0.4rem 0rem;
+    width: 8rem;
+    padding: 1px;
+    border-radius: 1.9rem;
+    background-image: linear-gradient(rgb(80, 75, 75), rgb(53, 51, 51), rgb(80, 75, 75));
+    cursor: pointer;
+}
+.card button a{
+    font-size: 0.95rem;
+    color: white;
+}
+.card button:hover{
+    background-image: linear-gradient(rgb(223, 213, 255), rgb(255, 235, 249), rgb(251, 186, 228));
+}
+.card button:hover a{
+    color: black;
+}
+.card:hover{
+    /* background-color: rgb(130, 134, 253); */
+    box-shadow: inset 5px 5px 5px rgba(4,67,227,0.05),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.05),
+                5px 5px 5px rgba(4, 67, 227, 0.05),
+                -5px -5px 5px rgba(255, 255, 255, 0.05);
+    /* background-image: linear-gradient(rgb(218, 198, 250), rgb(255, 217, 217), rgb(255, 212, 212), rgb(254, 174, 174)); */
+    background-image: linear-gradient(rgb(228, 211, 255), rgb(255, 217, 217), rgb(254, 219, 219), rgb(255, 218, 218));
+}
+.card:hover .box{
+    transform: translateY(-15px) scale(1.05,1.05);
+    box-shadow: 0px 10px 40px rgba(0,0,0,0.2);
+    background-image: linear-gradient(rgb(252, 218, 252), rgb(217, 229, 254), rgb(169, 196, 251));
+}
