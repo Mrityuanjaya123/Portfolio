@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.sidebar {
+    /* background-color: rgb(121, 163, 255); */
+    background: linear-gradient(rgba(187, 209, 255, 0.8), rgba(132, 171, 255, 0.6), rgba(94, 146, 249, 0.4));
+    width: 15vw;
+    height: 100vh;
+}
+
+.sidebar nav {
+    padding: 25px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 1.7rem;
+    padding: 33px 0px;
+}
+
+.sidebar nav li a{
+    width: 6.8rem;
+}
+
+
+.container {
+    display: flex;
+}
+.container::before{
+    content: "";
+    background: url(./Images/educationBackground.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.04;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+
+.main {
+    /* background-color: yellow; */
+    width: 85vw;
+    height: 100vh;
+}
+
+.main .heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    margin: 2rem 0rem 1rem 0rem;
+}
+
+.content .school{
+    display: flex;
+    align-items: center;
+    margin: 2rem 1.7rem;
+}
+
+.schoolInfo{
+    /* border: 2px solid black; */
+    margin: 0rem 0.4rem;
+    padding: 0.3rem 1rem;
+}
+.schoolInfo h1, h4{
+    margin-bottom: 0.4rem;
+}
+.schoolInfo h2{
+    margin-bottom: 0.5rem;
+}
+.schoolInfo .marks{
+    border: 2px solid blue;
+    width: fit-content;
+    border-radius: 12px;
+    padding: 2px;
+    background: linear-gradient(rgb(218, 247, 252), rgb(217, 251, 254), rgb(168, 233, 255));
+    margin-bottom: 2rem;
+}
+
+.schoolPics{
+    margin: 0rem 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.schoolPics .container{
+    width: 23vw;
+    height: 30vh;
+    border: 10px solid white;
+    box-shadow: 10px 25px 28px black;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.schoolPics .container .imageContainer{
+    width: 100%;
+    display: flex;
+    transform: translateX(0px);
+    animation: slide 10s infinite;
+}
+.schoolPics .container .imageContainer img{
+    width: 100%;
+}
+@keyframes slide {
+    0%{
+        transform: translateX(0%);
+    }
+    22%{
+        transform: translateX(0%);
+    }
+    25%{
+        transform: translateX(-100%);
+    }
+    47%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-200%);
+    }
+    72%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-300%);
+    }
+    90%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    border: 3px ridge black;
+    box-shadow: 2px 2px black;
+    cursor: pointer;
+    background-image: linear-gradient(rgb(218, 229, 252), rgb(217, 229, 254), rgb(143, 177, 246));
+}
+.btn:hover{
+    color: white;
+    background-image: linear-gradient(rgb(14, 84, 237), rgb(6, 53, 155), rgb(27, 92, 220));
+}
+.btn:active{
+    transform: translateY(3px);
+}
